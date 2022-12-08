@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-amber-100;
+}
+
+.moi:hover .ici {
+    display: block;
+}
+
+.ici {
+    display: none;
+}
+
+/* CARD */
+
+.card{
+    transition:  100ms ease-out;
+	color: rgba(0, 98, 255, 0.553);
+    position: relative;
+}
+
+.card:hover{
+    transition:  100ms ease-out; 
+}
+
+.stats-container{
+    transition: all 200ms ease-out;
+}
+
+.card:hover .image_overlay{
+	opacity:0.7;	
+    transition: all 200ms ease-out; 
+}
+
+.card:hover .add_to_cart{
+	opacity:1;		
+}
+
+.cart-item::before {
+    content:attr(data-totalitems);
+    display:block;
+    position: absolute;
+    line-height:24px;
+    height:24px;
+    width:24px;
+    font-size:12px;
+    font-weight:600;
+    bottom: 0;
+    background-color: orange;
+    color:white;
+    border-radius:20px;
+    text-align:center;
+}
+
+
+
+
+

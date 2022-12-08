@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/dist/output.css" rel="stylesheet">
+        <link rel="stylesheet" href="flowbite.min.css" />
+        <link rel="stylesheet" href="output.css" />
+        <title>TEMSAMANI - Eshop</title>
+    </head>
+    <body>
+
+        <header class="menu bg-amber-100 mx-5 md:mx-0">
+            <nav class="px-2 sm:px-4 pt-12 md:mx-10">
+                <div class="container flex flex-wrap items-center
+                    justify-between mx-auto">
+                    <a href="index.html" class="flex items-center">
+                        <span class="self-center text-2xl font-medium font-sans
+                            whitespace-nowrap ">temsamani</span>
+                    </a>
+                    <div class="flex items-center md:order-2">
+
+                        <button type="button" class="cart flex mr-3 text-sm
+                            w-12 h-12
+                            border-solid border-4 border-white bg-yellow-50
+                            rounded-full md:mr-0 place-content-center
+                            place-items-center focus:ring-2
+                            focus:ring-amber-500" id="user-menu-button"
+                            aria-expanded="false"
+                            data-dropdown-toggle="user-dropdown"
+                            data-dropdown-placement="bottom">
+                            <img class="w-[25px] h-auto rounded-full"
+                                src="img/bag.png" alt="user photo">
+                            <span class="cart-item relative"
+                                data-totalitems="0"></span>
+                        </button>
+                        <!-- Dropdown menu -->
+                        <div class="z-50 hidden my-4 text-base list-none
+                            bg-white divide-y pt- divide-gray-100 rounded
+                            shadow"
+                            id="user-dropdown">
+                            <div class="px-4 py-3">
+                                <div id="cart">
+                                    <span class="empty text-sm text-gray-900">No
+                                        items in cart.</span>
+                                    <div class="cartitems flex ">
+                                        <span class="img-produit w-25"></span>
+                                        <div class="noms px-5">
+                                            <div class="nom-produit text-base
+                                                font-medium"></div>
+                                            <div class="descri-produit text-sm
+                                                font-medium pt-[2px]
+                                                pb-[20px] text-gray-400"></div>
+                                        </div>
+                                        <div class="prix-produit font-bold
+                                            product_price
+                                            float-right text-amber-500
+                                            text-2xl"></div>
+                                        <div class="remove"></div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <button data-collapse-toggle="mobile-menu-2"
+                            type="button" class="inline-flex items-center p-2
+                            ml-1 text-sm text-black rounded-lg md:hidden
+                            hover:bg-amber-500 focus:outline-none focus:ring-2
+                            focus:ring-amber-500" aria-controls="mobile-menu-2"
+                            aria-expanded="false">
+                            <svg class="w-6 h-6" aria-hidden="true"
+                                fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg"><path
+                                    fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1
+                                    1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0
+                                    011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1
+                                    1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                    clip-rule="evenodd"></path></svg>
+                        </button>
+                    </div>
+                    <div class="items-center justify-between hidden w-full
+                        md:flex md:w-auto md:order-1" id="mobile-menu-2">
+                        <ul class="flex flex-col p-4 mt-4 rounded-lg md:flex-row
+                            md:space-x-8 md:mt-0 md:text-sm md:font-medium
+                            md:border-0">
+                            <li>
+                                <a href="#" class="block text-base py-2 pl-3
+                                    pr-4 rounded hover:bg-amber-500
+                                    md:hover:bg-transparent
+                                    md:hover:text-amber-500 md:p-0">Home</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block py-2 pl-3 text-base
+                                    pr-4 rounded hover:bg-white
+                                    md:hover:bg-transparent text-amber-500
+                                    md:hover:text-black md:p-0
+                                    aria-current="page"">Shop</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block py-2 pl-3 text-base
+                                    pr-4 rounded hover:bg-amber-500
+                                    md:hover:bg-transparent
+                                    md:hover:text-amber-500 md:p-0">Blog</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block py-2 pl-3 pr-4
+                                    text-base rounded hover:bg-amber-500
+                                    md:hover:bg-transparent
+                                    md:hover:text-amber-500 md:p-0">Contact</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="bc mx-5 md:mx-10">
+            <div class="container pt-12 pb-20 mx-auto ">
+                <div style="background-image: url('img/bg.jpg');"
+                    class="container
+                    h-96 w-auto rounded-[50px] bg-amber-500
+                    bg-no-repeat bg-cover bg-left-top">
+                    <div class="py-16 px-16 container flex flex-wrap
+                        items-center
+                        justify-between mx-auto">
+                        <div>
+                            <p class="text-sm md:text-lg"><span
+                                    class="text-white
+                                    px-1"">Home</span>|
+                                Product</p>
+                        </div>
+                        <div>
+                            <p class="self-center text-4xl font-medium font-sans
+                                whitespace-nowrap">Shop</p>
+                        </div>
+                        <div class="flex items-center">
+                            <!-- <p class="px-5 text-sm">Showing 1-6 of 12 results</p> -->
+                            <div">
+                                <form>
+                                    <select id="default" class="text-sm
+                                        md:text-lg bg-amber-100
+                                        border-none opacity-75 rounded-xl
+                                        focus:border-amber-500 px-8"
+                                        name="default">
+                                        <option value="ds">Default sorting</option>
+                                        <option value="all">All</option>
+                                        <option value="fame">Popular</option>
+                                    </select>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container pt-12 pb-20 mx-auto py-16 px-16 flex
+                justify-evenly flex-wrap top-80
+                right-3 -mt-[350px]">
+                <div class="card cards rounded-[35px] h-96 overflow-hidden flex
+                    items-center max-w-sm
+                    bg-white
+                    border-[3px]
+                    border-white mb-[20px]
+                    shadow-sm product-front hover:shadow-md
+                    pb-10" data-parent="1">
+                    <div class="item flex items-center
+                        justify-center align-middle mx-auto"
+                        style="display:
+                        block;">
+                        <div class="shadow" style="display: none; opacity: 0;"></div>
+                        <img data-img="img/amber.png" class="images h-full
+                            w-[50%]
+                            bg-contain
+                            mx-auto relative bottom-5
+                            drop-shadow-[-10px_15px_5px_rgba(255,166,0,0.35)]"
+                            src="img/amber.png" alt="">
+                        <div class="image_overlay absolute top-0 left-0 w-full
+                            h-full bg-amber-500 opacity-0"></div>
+                        <div class="add_to_cart text-white text-center uppercase
+                            font-bold opacity-0 hover:bg-white border-2
+                            border-solid border-white py-[10px] px-[15px]
+                            hover:text-amber-500 absolute top-[30%] left-[25%]
+                            md:left-[29%]
+                            w-40 cursor-pointer text-sm" data-id="1">Add to
+                            cart</div>
+                        <div class="stats">
+                            <div class="stats-container bg-white absolute
+                                top-[75%]
+                                py-[10px] border-white w-full pt-[24px]
+                                pr-[40px]
+                                pb-[35px] pl-[30px]">
+                                <span data-price="$129" class="font-bold
+                                    product_price
+                                    float-right
+                                    text-amber-500 text-3xl
+                                    ">$129</span>
+                                <span class="product_name text-base font-medium"
+                                    data-name="Luxury fashion Handbag">Luxury
+                                    fashion Handbag</span>
+                                <p data-descri="Color Pink gold"
+                                    class="product_descri text-sm
+                                    font-medium pt-[2px]
+                                    pb-[20px] text-gray-400">Color Pink gold</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card cards rounded-[35px] h-96 overflow-hidden flex
+                    items-center max-w-sm
+                    bg-white
+                    border-[3px]
+                    border-white
+                    shadow-sm product-front hover:shadow-md"
+                    data-parent="2">
+                    <div class="item flex items-center
+                        justify-center align-middle mx-auto"
+                        style="display:
+                        block;">
+                        <div class="shadow" style="display: none; opacity: 0;"></div>
+                        <img data-img="img/blue.png" class="images h-full
+                            w-[55%]
+                            bg-contain
+                            mx-auto relative bottom-8
+                            drop-shadow-[-10px_15px_5px_rgba(255,166,0,0.35)]"
+                            src="img/blue.png" alt="">
+                        <div class="image_overlay absolute top-0 left-0 w-full
+                            h-full bg-amber-500 opacity-0"></div>
+                        <div class="add_to_cart text-white text-center uppercase
+                            font-bold opacity-0 hover:bg-white border-2
+                            border-solid border-white py-[10px] px-[15px]
+                            hover:text-amber-500 absolute top-[30%] left-[25%]
+                            md:left-[29%]
+                            w-40 cursor-pointer text-sm" data-id="2">Add to
+                            cart</div>
+                        <div class="stats">
+                            <div class="stats-container bg-white absolute
+                                top-[75%]
+                                py-[10px] border-white w-full pt-[24px]
+                                pr-[40px]
+                                pb-[35px] pl-[30px]">
+                                <span data-price="$ 99" class="product_price
+                                    float-right
+                                    text-amber-500 text-3xl font-bold
+                                    ">$99</span>
+                                <span class="product_name text-base
+                                    font-semibold"
+                                    data-name="Luxury fashion Handbag">Luxury
+                                    fashion Handbag</span>
+                                <p data-descri="Color Blue"
+                                    class="product_descri text-sm font-medium
+                                    pt-[2px]
+                                    pb-[20px] text-gray-400">Color Blue</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card cards rounded-[35px] h-96 overflow-hidden flex
+                    items-center max-w-sm
+                    bg-white
+                    border-[3px]
+                    border-white mt-[5%] xl:mt-0
+                    shadow-sm product-front hover:shadow-md
+                    pb-10" data-parent="3">
+                    <div class="item flex items-center
+                        justify-center align-middle mx-auto"
+                        style="display:
+                        block;">
+                        <div class="shadow" style="display: none; opacity: 0;"></div>
+                        <img data-img="img/green.png" class="images h-full
+                            w-[45%]
+                            bg-contain
+                            mx-auto relative bottom-4
+                            drop-shadow-[-10px_15px_5px_rgba(255,166,0,0.35)]"
+                            src="img/green.png" alt="">
+                        <div class="image_overlay absolute top-0 left-0 w-full
+                            h-full bg-amber-500 opacity-0"></div>
+                        <div class="add_to_cart text-white text-center uppercase
+                            font-bold opacity-0 hover:bg-white border-2
+                            border-solid border-white py-[10px] px-[15px]
+                            hover:text-amber-500 absolute top-[30%] left-[25%]
+                            md:left-[29%]
+                            w-40 cursor-pointer text-sm" data-id="3">Add to
+                            cart</div>
+                        <div class="stats">
+                            <div class="stats-container bg-white absolute
+                                top-[75%]
+                                py-[10px] border-white w-full pt-[24px]
+                                pr-[40px]
+                                pb-[35px] pl-[30px]">
+                                <span data-price="$119" class="product_price
+                                    float-right
+                                    text-amber-500 text-3xl font-bold
+                                    ">$119</span>
+                                <span class="product_name text-base font-medium"
+                                    data-name="Luxury fashion Handbag">Luxury
+                                    fashion Handbag</span>
+                                <p data-descri="Color Green"
+                                    class="product_descri
+                                    text-sm
+                                    font-semibold pt-[2px]
+                                    pb-[20px] text-gray-400">Color Green</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card cards rounded-[35px] h-96 overflow-hidden flex
+                    items-center max-w-sm
+                    bg-white
+                    border-[3px]
+                    border-white mt-[5%] xl:mt-0
+                    shadow-sm product-front hover:shadow-md
+                    pb-10" data-parent="4">
+                    <div class="item flex items-center
+                        justify-center align-middle mx-auto"
+                        style="display:
+                        block;">
+                        <div class="shadow" style="display: none; opacity: 0;"></div>
+                        <img data-img="img/pistachio.png" class="images h-full
+                            w-[65%]
+                            bg-contain
+                            mx-auto relative bottom-5
+                            drop-shadow-[-10px_15px_5px_rgba(255,166,0,0.35)]"
+                            src="img/pistachio.png" alt="">
+                        <div class="image_overlay absolute top-0 left-0 w-full
+                            h-full bg-amber-500 opacity-0"></div>
+                        <div class="add_to_cart text-white text-center uppercase
+                            font-bold opacity-0 hover:bg-white border-2
+                            border-solid border-white py-[10px] px-[15px]
+                            hover:text-amber-500 absolute top-[30%] left-[25%]
+                            md:left-[29%]
+                            w-40 cursor-pointer text-sm" data-id="4">Add to
+                            cart</div>
+                        <div class="stats">
+                            <div class="stats-container bg-white absolute
+                                top-[75%]
+                                py-[10px] border-white w-full pt-[24px]
+                                pr-[40px]
+                                pb-[35px] pl-[30px]">
+                                <span data-price="$109" class="product_price
+                                    float-right
+                                    text-amber-500 text-3xl font-bold
+                                    ">$109</span>
+                                <span class="text-base font-medium product_name"
+                                    data-name="Luxury fashion Handbag">Luxury
+                                    fashion Handbag </span>
+                                <p data-descri="Color Pistachio"
+                                    class="product_descri text-sm
+                                    font-semibold pt-[2px]
+                                    pb-[20px] text-gray-400">Color Pistachio</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card cards rounded-[35px] h-96 overflow-hidden flex
+                    items-center max-w-sm
+                    bg-white
+                    border-[3px]
+                    border-white mt-[5%] xl:mt-0
+                    shadow-sm product-front hover:shadow-md
+                    pb-10" data-parent="5">
+                    <div class="item flex items-center
+                        justify-center align-middle mx-auto"
+                        style="display:
+                        block;">
+                        <div class="shadow" style="display: none; opacity: 0;"></div>
+                        <img data-img="img/pink.png" class=" images h-full
+                            w-[38%]
+                            bg-contain
+                            mx-auto relative bottom-5
+                            drop-shadow-[10px_15px_5px_rgba(255,166,0,0.35)]"
+                            src="img/pink.png" alt="">
+                        <div class="image_overlay absolute top-0 left-0 w-full
+                            h-full bg-amber-500 opacity-0"></div>
+                        <div class="add_to_cart text-white text-center uppercase
+                            font-bold opacity-0 hover:bg-white border-2
+                            border-solid border-white py-[10px] px-[15px]
+                            hover:text-amber-500 absolute top-[30%] left-[25%]
+                            md:left-[29%]
+                            w-40 cursor-pointer text-sm font-" data-id="5">Add
+                            to
+                            cart</div>
+                        <div class="stats">
+                            <div class="stats-container bg-white absolute
+                                top-[75%]
+                                py-[10px] border-white w-full pt-[24px]
+                                pr-[40px]
+                                pb-[35px] pl-[30px]">
+                                <span data-price="$129" class="product_price
+                                    float-right
+                                    text-amber-500 text-3xl font-bold
+                                    ">$129</span>
+                                <span class="text-base font-medium product_name"
+                                    data-name="Luxury fashion Handbag">Luxury
+                                    fashion Handbag</span>
+                                <p data-descri="Color dark Pink"
+                                    class="product_descri text-sm
+                                    font-semibold pt-[2px]
+                                    pb-[20px] text-gray-400">Color dark Pink</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card cards rounded-[35px] h-96 overflow-hidden flex
+                    items-center max-w-sm
+                    bg-white
+                    border-[3px]
+                    border-white mt-[5%] xl:mt-0
+                    shadow-sm product-front hover:shadow-md
+                    pb-10" data-parent="6">
+                    <div class="item flex items-center
+                        justify-center align-middle mx-auto"
+                        style="display:
+                        block;">
+                        <div class="shadow" style="display: none; opacity: 0;"></div>
+                        <img data-img="img/old-pink.png" class="images h-full
+                            w-[45%]
+                            bg-contain
+                            mx-auto relative bottom-5
+                            drop-shadow-[10px_15px_5px_rgba(255,166,0,0.35)]"
+                            src="img/old-pink.png" alt="">
+                        <div class="image_overlay absolute top-0 left-0 w-full
+                            h-full bg-amber-500 opacity-0"></div>
+                        <div class="add_to_cart text-white text-center uppercase
+                            font-bold opacity-0 hover:bg-white border-2
+                            border-solid border-white py-[10px] px-[15px]
+                            hover:text-amber-500 absolute top-[30%] left-[25%]
+                            md:left-[29%]
+                            w-40 cursor-pointer text-sm" data-id="6">Add to
+                            cart</div>
+                        <div class="stats">
+                            <div class="stats-container bg-white absolute
+                                top-[75%]
+                                py-[10px] border-white w-full pt-[24px]
+                                pr-[40px]
+                                pb-[35px] pl-[30px]">
+                                <span data-price="$159" class="product_price
+                                    font-bold
+                                    float-right
+                                    text-amber-500 text-3xl
+                                    ">$159</span>
+                                <span class=" product_name text-base
+                                    font-semibold" data-name="Luxury fashion
+                                    Handbag">Luxury fashion Handbag</span>
+                                <p data-descri="Color old Pink"
+                                    class="product_descri text-sm font-medium
+                                    pt-[2px]
+                                    pb-[20px] text-gray-400">Color old Pink</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+
+        <script src="js/jquery-3.6.1.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/flowbite.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
